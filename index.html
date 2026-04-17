@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bem-vindo | Elo Saúde</title>
+  <meta name="description" content="Elo Saúde - informação, acolhimento e cuidado para famílias de crianças atípicas.">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="pagina-loader">
@@ -13,10 +14,12 @@
     <div class="shape shape-2"></div>
     <div class="shape shape-3"></div>
 
-    <section class="loader-box">
+    <section class="loader-box" aria-labelledby="titulo-principal">
+      <span class="loader-badge">Elo Saúde</span>
+
       <p class="loader-topo">Bem-vindo ao</p>
 
-      <h1 class="logo-animada" aria-label="Elo Saúde">
+      <h1 id="titulo-principal" class="logo-animada" aria-label="Elo Saúde">
         <span class="letra letra-1">E</span>
         <span class="letra letra-2">l</span>
         <span class="letra letra-3">o</span>
@@ -32,13 +35,27 @@
         Inclusão infantil, acolhimento, cuidado e informação para famílias.
       </p>
 
-      <div class="barra-carregamento">
-        <div class="progresso"></div>
+      <p class="loader-frase" id="fraseDinamica">
+        Preparando um espaço especial para você...
+      </p>
+
+      <div
+        class="barra-carregamento"
+        role="progressbar"
+        aria-valuemin="0"
+        aria-valuemax="100"
+        aria-valuenow="0"
+      >
+        <div class="progresso" id="progresso"></div>
       </div>
 
-      <p id="contador" class="contador">Abrindo página principal...</p>
+      <p id="contador" class="contador">
+        Abrindo página principal em 5 segundos...
+      </p>
 
-      <a href="pages/home.html" class="botao-entrar">Entrar agora</a>
+      <div class="loader-acoes">
+        <a href="./pages/home.html" class="btn-entrar">Entrar agora</a>
+      </div>
     </section>
   </main>
 

@@ -1,417 +1,293 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Elo Saúde | Conectando cuidado e desenvolvimento</title>
-  <meta
-    name="description"
-    content="Elo Saúde - Conectando cuidado e desenvolvimento além do diagnóstico. Informações, acolhimento e apoio para mães e famílias de crianças atípicas."
-  />
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elo Saúde | Home</title>
+  <meta name="description" content="Elo Saúde - acolhimento, informação e desenvolvimento infantil.">
+  <link rel="stylesheet" href="../css/site.css">
 </head>
 <body>
-
-  <header class="topo" id="home">
+  <header class="header">
     <div class="container nav">
-      <a href="#home" class="logo">
-        <img src="img/logo.png" alt="Logo Elo Saúde" />
-        <div class="logo-texto">
+      <a href="../index.html" class="brand">
+        <img src="../img/logo.07" alt="Logo Elo Saúde" class="brand-logo" data-fallback-text="Logo">
+        <div class="brand-text">
           <strong>Elo Saúde</strong>
           <span>Cuidado, ciência e acolhimento</span>
         </div>
       </a>
 
-      <nav class="menu-desktop">
+      <nav class="desktop-nav">
         <a href="#home">Home</a>
-        <a href="#noticia">Notícia</a>
-        <a href="#sobre">Sobre nós</a>
-        <a href="#temas">Temas</a>
-        <a href="#materiais">Materiais</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#noticias">Notícias</a>
+        <a href="#videos">Vídeos</a>
         <a href="#contato">Contato</a>
-        <a href="#sugestoes">Sugestões</a>
       </nav>
 
-      <div class="acoes-topo">
-        <div class="busca">
-          <input type="text" id="campoBusca" placeholder="Pesquisar conteúdo..." />
-          <button type="button" id="btnPesquisar" aria-label="Pesquisar">🔍</button>
+      <div class="header-actions">
+        <div class="search-box">
+          <input type="text" id="campoBusca" placeholder="Pesquisar conteúdo...">
+          <button id="btnPesquisar" type="button">🔍</button>
         </div>
 
-        <button class="btn-fonte" id="diminuirFonte">A-</button>
-        <button class="btn-fonte" id="aumentarFonte">A+</button>
-        <button class="btn-voz" id="lerPagina" aria-label="Ouvir página">🔊</button>
-        <button class="btn-menu" id="abrirMenu" aria-label="Abrir menu">☰</button>
+        <div class="font-controls">
+          <button type="button" id="diminuirFonte">A-</button>
+          <button type="button" id="resetarFonte">A</button>
+          <button type="button" id="aumentarFonte">A+</button>
+        </div>
+
+        <button class="menu-toggle" id="abrirMenu" type="button" aria-expanded="false">☰</button>
       </div>
     </div>
 
-    <div class="menu-mobile" id="menuMobile">
+    <div class="mobile-nav" id="menuMobile">
       <a href="#home">Home</a>
-      <a href="#noticia">Notícia</a>
-      <a href="#sobre">Sobre nós</a>
-      <a href="#temas">Temas</a>
-      <a href="#materiais">Materiais</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#noticias">Notícias</a>
+      <a href="#videos">Vídeos</a>
       <a href="#contato">Contato</a>
-      <a href="#sugestoes">Sugestões</a>
     </div>
   </header>
 
-  <section class="hero">
-    <div class="container hero-grid">
-      <div class="hero-texto">
-        <span class="badge">Elo Saúde</span>
-        <h1>Conectando cuidado e desenvolvimento além do diagnóstico</h1>
-        <p>
-          Levamos conhecimento baseado em evidência, com amor, cuidado e acolhimento,
-          para orientar mães e famílias de crianças atípicas em sua jornada.
-        </p>
-
-        <div class="hero-botoes">
-          <a href="#temas" class="btn-principal">Explorar temas</a>
-          <a href="#sugestoes" class="btn-secundario">Enviar sugestão</a>
-        </div>
-      </div>
-
-      <div class="hero-card">
-        <h2>Mensagem principal</h2>
-        <p>
-          Um espaço criado para unir <strong>ciência, inclusão, infância e cuidado</strong>,
-          com linguagem acessível, conteúdo humanizado e apoio real para famílias.
-        </p>
-
-        <div class="hero-mini-info">
-          <div>
-            <strong>Foco</strong>
-            <span>Infância, inclusão e desenvolvimento</span>
-          </div>
-          <div>
-            <strong>Estilo</strong>
-            <span>Acolhedor, leve e humanizado</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="secao" id="noticia">
-    <div class="container">
-      <div class="titulo-secao">
-        <span>Notícia em destaque</span>
-        <h2>Informação acessível para acolher e orientar famílias</h2>
-        <p>
-          O Elo Saúde nasce com o propósito de compartilhar conteúdos educativos,
-          acolhedores e baseados em evidência sobre o desenvolvimento infantil.
-        </p>
-      </div>
-
-      <article class="noticia-card">
-        <div class="noticia-imagem">
-          <img src="https://uploads.metropoles.com/wp-content/uploads/2023/04/13165905/Fotogtafa-fotos-gratuitas-criancas-com-deficienica-1024x683.jpeg" alt="Mãe com criança em momento de cuidado e acolhimento" />
-        </div>
-
-        <div class="noticia-conteudo">
-          <span class="noticia-tag">Destaque</span>
-          <h3>Elo Saúde fortalece o acesso à informação para famílias de crianças atípicas</h3>
-          <p class="noticia-meta">Publicado em 07 de abril de 2026</p>
-
+  <main>
+    <section class="hero" id="home" data-keywords="home elo saúde acolhimento desenvolvimento infantil">
+      <div class="container hero-grid">
+        <div class="hero-content card">
+          <span class="badge">Elo Saúde</span>
+          <h1>Informação e acolhimento para famílias de crianças com desenvolvimento atípico</h1>
           <p>
-            O projeto Elo Saúde foi criado para aproximar famílias de conteúdos claros,
-            sensíveis e confiáveis sobre temas como desenvolvimento infantil, inclusão,
-            acolhimento e apoio à rotina de mães, pais e cuidadores.
+            Um espaço pensado para compartilhar conteúdos acessíveis, sensíveis e confiáveis
+            sobre inclusão, desenvolvimento infantil e apoio à rotina familiar.
           </p>
 
+          <div class="hero-buttons">
+            <a href="#noticias" class="btn btn-primary">Ver notícias</a>
+            <a href="#videos" class="btn btn-secondary">Ver vídeos</a>
+          </div>
+
+          <div class="hero-points">
+            <span>Visual profissional</span>
+            <span>Conteúdo acessível</span>
+            <span>Layout responsivo</span>
+          </div>
+        </div>
+
+        <div class="hero-image-box card">
+          <img src="https://img.freepik.com/vetores-premium/mae-deficiente-segurando-o-filho-nos-bracos-feliz-mae-deficiente-abracando-o-bebe_940927-11891.jpg" alt="Família e cuidado" class="hero-image" data-fallback-text="Elo Saúde">
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="sobre" data-keywords="sobre missão objetivo projeto elo saúde">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Sobre</span>
+          <h2>Um projeto criado para orientar com clareza e cuidado</h2>
           <p>
-            A proposta é construir um espaço digital humanizado, com linguagem simples,
-            materiais informativos e temas relevantes para fortalecer o cuidado e ampliar
-            o conhecimento de quem vive essa jornada no dia a dia.
+            O Elo Saúde aproxima famílias de conteúdos confiáveis, acolhedores e organizados
+            para fortalecer a jornada do desenvolvimento infantil.
           </p>
+        </div>
+
+        <div class="info-grid">
+          <article class="info-card card">
+            <h3>Quem somos</h3>
+            <p>Um projeto dedicado à inclusão, informação acessível e apoio às famílias.</p>
+          </article>
+
+          <article class="info-card card">
+            <h3>Nosso objetivo</h3>
+            <p>Levar conhecimento baseado em evidências com linguagem humana e sensível.</p>
+          </article>
+
+          <article class="info-card card">
+            <h3>Nossa missão</h3>
+            <p>Promover acolhimento, informação e cuidado além do diagnóstico.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="noticias" data-keywords="notícias noticia matérias desenvolvimento inclusão">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Notícias</span>
+          <h2>Conteúdos para informar e acolher</h2>
+          <p>
+            Aqui você pode publicar matérias, textos educativos e conteúdos especiais do projeto.
+          </p>
+        </div>
+
+        <article class="featured-news card">
+          <div class="featured-news-media">
+            <img src="https://uploads.metropoles.com/wp-content/uploads/2023/04/13165905/Fotogtafa-fotos-gratuitas-criancas-com-deficienica.jpeg" alt="Notícia em destaque" data-fallback-text="Destaque">
+          </div>
+
+          <div class="featured-news-content">
+            <span class="news-tag">Destaque</span>
+            <h3>Desenvolvimento infantil com acolhimento e informação de qualidade</h3>
+            <p class="news-meta">Publicado em 16 de abril de 2026</p>
+            <p>
+              O Elo Saúde nasce com a proposta de reunir conteúdos que apoiam mães, pais e cuidadores
+              na busca por orientação com mais clareza, leveza e responsabilidade.
+            </p>
+            <a href="./noticia1.html" class="btn btn-primary">Ler notícia completa</a>
+          </div>
+        </article>
+
+        <div class="news-grid">
+            <a href="./TerapiaAquáticaparaCriançascomSíndromedeDown.html" class="news-card card search-item" data-keywords="desenvolvimento infantil acolhimento cuidado">         
+            <img src="../img/capa1img.2.png" alt="Notícia 1" data-fallback-text="Notícia 1">
+            <div class="news-card-text">
+              <h3>Benefícios da Terapia Aquática para Crianças com Síndrome de Down</h3>
+              <span>16 de abril de 2026</span>
+            </div>
+          </a>
+
+          <a href="./Desenvolvercom movimento.html" class="news-card card search-item" data-keywords="inclusão família rotina apoio">
+            <img src="../img/capa2.png" alt="Notícia 2" data-fallback-text="Notícia 2">
+            <div class="news-card-text">
+              <h3>Desenvolver com movimento: o poder dos exercícios na infância com Síndrome de Down</h3>
+              <span>16 de abril de 2026</span>
+            </div>
+          </a>
+
+        <a href="./Exercício físico na Síndrome de Down.html" class="news-card card search-item" data-keywords="inclusão família rotina apoio">
+            <img src="../img/capa3.png" alt="Notícia 2" data-fallback-text="Notícia 2">
+            <div class="news-card-text">
+              <h3>Exercício físico na Síndrome de Down: por que é tão importante?</h3>
+              <span>16 de abril de 2026</span>
+            </div>
+        </a>
+
+        <a href="./Muitoantesdonascimento.html" class="news-card card search-item" data-keywords="inclusão família rotina apoio">
+            <img src="../img/capa4.png" alt="Notícia 2" data-fallback-text="Notícia 2">
+            <div class="news-card-text">
+              <h3>Muito antes do nascimento: o que já acontece no organismo na Síndrome de Down</h3>
+              <span>16 de abril de 2026</span>
+            </div>
+        </a>
+
+        <a href="./o impacto da ecoterapia na Síndrome de Down.html" class="news-card card search-item" data-keywords="inclusão família rotina apoio">
+            <img src="../img/capa5.png" alt="Notícia 1" data-fallback-text="">
+            <div class="news-card-text">
+              <h3>Entre passos e conquistas: o impacto da ecoterapia na Síndrome de Down</h3>
+              <span>16 de abril de 2026</span>
+            </div>
+        </a>
+        <a href="./Desenvolvimento motor na Síndrome de Down.html" class="news-card card search-item" data-keywords="inclusão família rotina apoio">
+            <img src="../img/capa5.png" alt="Notícia 1" data-fallback-text="">
+            <div class="news-card-text">
+              <h3>Desenvolvimento motor na Síndrome de Down: o que esperar no primeiro ano</h3>
+              <span>16 de abril de 2026</span>
+            </div>
+        </a>
+
+
+
+
+
+
 
           
         </div>
-      </article>
-    </div>
-  </section>
-
-  <section class="secao" id="sobre">
-    <div class="container">
-      <div class="titulo-secao">
-        <span>Sobre nós</span>
-        <h2>Quem somos e qual é o nosso objetivo</h2>
-        <p>
-          O Elo Saúde é um projeto criado para compartilhar informação confiável,
-          acolhimento e orientação sobre o desenvolvimento infantil e as vivências
-          de famílias de crianças atípicas.
-        </p>
       </div>
+    </section>
 
-      <div class="cards-sobre">
-        <article class="card">
-          <h3>Quem somos</h3>
+    <section class="section section-soft" id="videos" data-keywords="vídeos youtube conteúdos audiovisuais">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Vídeos</span>
+          <h2>Conteúdo em vídeo com linguagem leve e acessível</h2>
           <p>
-            Somos um projeto voltado ao desenvolvimento infantil com propósito,
-            buscando aproximar famílias de conteúdos mais claros, acessíveis e sensíveis.
+            Espaço ideal para destacar vídeos curtos, conteúdos educativos e materiais especiais.
           </p>
-        </article>
-
-        <article class="card">
-          <h3>Nosso objetivo</h3>
-          <p>
-            Levar conhecimento baseado em evidência, capacitando e orientando com
-            amor e cuidado mães de crianças atípicas.
-          </p>
-        </article>
-
-        <article class="card">
-          <h3>Nossa missão</h3>
-          <p>
-            Promover acolhimento, informação e inclusão, fortalecendo a jornada
-            das famílias além do diagnóstico.
-          </p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="secao fundo-claro" id="temas">
-    <div class="container">
-      <div class="titulo-secao">
-        <span>Temas</span>
-        <h2>Conteúdos importantes para acompanhar</h2>
-        <p>
-          Aqui você encontra áreas centrais do cuidado, do desenvolvimento, da inclusão
-          e de condições que fazem parte da realidade de muitas famílias.
-        </p>
-      </div>
-
-      <div class="grade-temas">
-        <article class="tema-card">
-          <h3>TEA (Autismo)</h3>
-          <p class="tema-resumo">
-            Informações sobre acolhimento, rotina, comunicação, desenvolvimento e apoio familiar.
-          </p>
-          <div class="tema-extra">
-            <p>
-              Conteúdos sobre sinais de atenção, inclusão escolar, adaptação da rotina,
-              suporte terapêutico e fortalecimento da autonomia da criança.
-            </p>
-          </div>
-          <button class="btn-ver-mais">Ver mais</button>
-        </article>
-
-        <article class="tema-card">
-          <h3>Paralisia cerebral</h3>
-          <p class="tema-resumo">
-            Conteúdos sobre funcionalidade, estímulos, autonomia, cuidado e qualidade de vida.
-          </p>
-          <div class="tema-extra">
-            <p>
-              Materiais sobre desenvolvimento motor, acompanhamento multiprofissional,
-              apoio à família e estratégias para o dia a dia.
-            </p>
-          </div>
-          <button class="btn-ver-mais">Ver mais</button>
-        </article>
-
-        <article class="tema-card">
-          <h3>Desenvolvimento infantil</h3>
-          <p class="tema-resumo">
-            Materiais sobre marcos do desenvolvimento, aprendizagem, brincadeiras e evolução infantil.
-          </p>
-          <div class="tema-extra">
-            <p>
-              Orientações sobre crescimento, estimulação, vínculo, linguagem, movimento
-              e importância do acompanhamento em cada fase.
-            </p>
-          </div>
-          <button class="btn-ver-mais">Ver mais</button>
-        </article>
-
-        <article class="tema-card">
-          <h3>Atrasos no desenvolvimento</h3>
-          <p class="tema-resumo">
-            Orientações iniciais para observar sinais, buscar apoio e entender cada fase com mais clareza.
-          </p>
-          <div class="tema-extra">
-            <p>
-              Explicações sobre sinais de alerta, avaliação precoce, importância da escuta
-              profissional e caminhos para acolhimento da família.
-            </p>
-          </div>
-          <button class="btn-ver-mais">Ver mais</button>
-        </article>
-
-        <article class="tema-card">
-          <h3>Estimulação e cuidado</h3>
-          <p class="tema-resumo">
-            Práticas e conteúdos que reforçam o desenvolvimento por meio do cuidado e da atenção diária.
-          </p>
-          <div class="tema-extra">
-            <p>
-              Sugestões de atividades, orientações sobre rotina, afeto, brincadeiras e
-              estímulos que podem apoiar o desenvolvimento infantil.
-            </p>
-          </div>
-          <button class="btn-ver-mais">Ver mais</button>
-        </article>
-
-        <article class="tema-card">
-          <h3>Apoio à família</h3>
-          <p class="tema-resumo">
-            Espaço para fortalecer mães, pais e cuidadores com informação, acolhimento e orientação.
-          </p>
-          <div class="tema-extra">
-            <p>
-              Conteúdos sobre saúde emocional, rede de apoio, desafios da rotina,
-              escuta e fortalecimento do cuidado familiar.
-            </p>
-          </div>
-          <button class="btn-ver-mais">Ver mais</button>
-        </article>
-
-        <article class="tema-card">
-          <h3>Síndrome de Down</h3>
-          <p class="tema-resumo">
-            Informações sobre desenvolvimento, inclusão, estimulação precoce e qualidade de vida.
-          </p>
-          <div class="tema-extra">
-            <p>
-              Conteúdos sobre aprendizagem, autonomia, convivência, acompanhamento
-              profissional e fortalecimento do potencial da criança.
-            </p>
-          </div>
-          <button class="btn-ver-mais">Ver mais</button>
-        </article>
-
-        <article class="tema-card">
-          <h3>TDAH</h3>
-          <p class="tema-resumo">
-            Conteúdos sobre atenção, comportamento, rotina, aprendizagem e apoio familiar.
-          </p>
-          <div class="tema-extra">
-            <p>
-              Materiais sobre adaptação escolar, organização da rotina, manejo do dia a dia
-              e estratégias para apoiar o desenvolvimento.
-            </p>
-          </div>
-          <button class="btn-ver-mais">Ver mais</button>
-        </article>
-
-        <article class="tema-card">
-          <h3>Deficiência intelectual</h3>
-          <p class="tema-resumo">
-            Orientações sobre inclusão, desenvolvimento, autonomia e acompanhamento contínuo.
-          </p>
-          <div class="tema-extra">
-            <p>
-              Explicações sobre aprendizagem, adaptação, cuidado, participação social e
-              fortalecimento da rede de apoio da criança e da família.
-            </p>
-          </div>
-          <button class="btn-ver-mais">Ver mais</button>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="secao" id="materiais">
-    <div class="container">
-      <div class="titulo-secao">
-        <span>Materiais</span>
-        <h2>Conteúdos para informar e acolher</h2>
-        <p>
-          Explore vídeos, podcasts, textos e materiais educativos voltados ao cuidado,
-          à inclusão e ao desenvolvimento infantil.
-        </p>
-      </div>
-
-      <div class="materiais-grid">
-        <article class="material-card">
-          <h3>Vídeos curtos</h3>
-          <p>Conteúdos rápidos e acessíveis para orientar famílias no dia a dia.</p>
-        </article>
-
-        <article class="material-card">
-          <h3>Podcast</h3>
-          <p>Conversas acolhedoras sobre desenvolvimento, cuidado e inclusão.</p>
-        </article>
-
-        <article class="material-card">
-          <h3>Matérias escritas</h3>
-          <p>Leituras com linguagem simples e informação confiável.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="secao fundo-claro" id="contato">
-    <div class="container">
-      <div class="titulo-secao">
-        <span>Contato</span>
-        <h2>Fale com o Elo Saúde</h2>
-        <p>Entre em contato, acompanhe os canais e conheça mais do projeto.</p>
-      </div>
-
-      <div class="contato-grid">
-        <article class="contato-card">
-          <h3>Email</h3>
-          <p>Envie dúvidas, sugestões, ideias e propostas de parceria.</p>
-          <a href="mailto:elosaudeconexao@gmail.com">elosaudeconexao@gmail.com</a>
-        </article>
-
-        <article class="contato-card">
-          <h3>YouTube</h3>
-          <p>Acompanhe os vídeos e materiais publicados no canal do projeto.</p>
-          <a href="https://www.youtube.com/@EloSa%C3%BAde-conexao" target="_blank">Ir para o YouTube</a>
-        </article>
-
-        <article class="contato-card">
-          <h3>Instagram</h3>
-          <p>Divulgue a mensagem do projeto com uma bio acolhedora e profissional.</p>
-          <div class="bio-instagram">
-            <strong>Bio sugerida:</strong>
-            <span>Desenvolvimento infantil com propósito</span>
-            <span>Acolhimento, ciência e amor 💛</span>
-            <span>Infâncias reais, sem rótulos</span>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="secao" id="sugestoes">
-    <div class="container">
-      <div class="titulo-secao">
-        <span>Caixa de sugestões</span>
-        <h2>Envie sua mensagem</h2>
-        <p>
-          Compartilhe ideias de temas, dúvidas ou sugestões para fortalecer o Elo Saúde.
-        </p>
-      </div>
-
-      <form class="formulario" id="formSugestoes">
-        <div class="campo">
-          <label for="nome">Nome</label>
-          <input type="text" id="nome" placeholder="Digite seu nome" required />
         </div>
 
-        <div class="campo">
-          <label for="email">E-mail</label>
-          <input type="email" id="email" placeholder="Digite seu e-mail" required />
+        <div class="videos-grid">
+          <article class="video-card card">
+            <img src="../img/video1.jpg" alt="Vídeo do projeto" data-fallback-text="Vídeo">
+            <div class="video-card-content">
+              <span class="video-tag">Vídeo em destaque</span>
+              <h3>Orientações práticas para a rotina familiar</h3>
+              <p>Uma área preparada para divulgar vídeos do Elo Saúde de forma profissional.</p>
+              <a href="#" class="btn btn-primary">Assistir vídeo</a>
+            </div>
+          </article>
+
+          <article class="video-card card">
+            <img src="../img/video1.jpg" alt="Vídeo especial do projeto" data-fallback-text="Vídeo Especial">
+            <div class="video-card-content">
+              <span class="video-tag">Vídeo especial</span>
+              <h3>Mais uma opção de conteúdo audiovisual</h3>
+              <p>Você pode trocar esse link pelo YouTube ou pela página do vídeo no site.</p>
+              <a href="#" class="btn btn-primary">Ver conteúdo</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contato" data-keywords="contato email instagram youtube">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Contato</span>
+          <h2>Fale com o Elo Saúde</h2>
+          <p>Entre em contato, envie sugestões e acompanhe os canais do projeto.</p>
         </div>
 
-        <div class="campo">
-          <label for="mensagem">Sugestão</label>
-          <textarea id="mensagem" rows="6" placeholder="Escreva sua mensagem aqui..." required></textarea>
+        <div class="contact-grid">
+          <article class="contact-card card">
+            <h3>Email</h3>
+            <p>Envie dúvidas, ideias e propostas.</p>
+            <a href="mailto:elosaudeconexao@gmail.com">elosaudeconexao@gmail.com</a>
+          </article>
+
+          <article class="contact-card card">
+            <h3>YouTube</h3>
+            <p>Acompanhe vídeos e conteúdos audiovisuais do projeto.</p>
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">Ir para o YouTube</a>
+          </article>
+
+          <article class="contact-card card">
+            <h3>Instagram</h3>
+            <p>Compartilhe a mensagem do projeto com mais pessoas.</p>
+            <div class="instagram-bio">
+              <strong>Bio sugerida:</strong>
+              <span>Desenvolvimento infantil com propósito</span>
+              <span>Acolhimento, ciência e amor</span>
+              <span>Infâncias reais, sem rótulos</span>
+            </div>
+          </article>
         </div>
 
-        <button type="submit" class="btn-principal">Enviar sugestão</button>
-        <p class="mensagem-form" id="mensagemForm"></p>
-      </form>
-    </div>
-  </section>
+        <form class="form card" id="formSugestoes">
+          <div class="form-group">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" placeholder="Digite seu nome" required>
+          </div>
 
-  <footer class="rodape">
-    <div class="container rodape-grid">
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" placeholder="Digite seu e-mail" required>
+          </div>
+
+          <div class="form-group">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" rows="6" placeholder="Escreva sua mensagem aqui..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Enviar sugestão</button>
+          <p class="form-message" id="mensagemForm"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
       <div>
         <h3>Elo Saúde</h3>
         <p>Conectando cuidado e desenvolvimento além do diagnóstico.</p>
@@ -434,11 +310,11 @@
       </div>
     </div>
 
-    <div class="rodape-final">
+    <div class="footer-bottom">
       <p>© <span id="anoAtual"></span> Elo Saúde. Todos os direitos reservados.</p>
     </div>
   </footer>
 
-  <script src="js/script.js"></script>
+  <script src="../js/site.js"></script>
 </body>
 </html>
